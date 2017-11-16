@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-class Home extends Component {
+class Header extends Component {
   render() {
     return (
       <h1>Haiii</h1>
@@ -8,4 +9,8 @@ class Home extends Component {
   }
 }
 
-export default Home;
+mapStateToProps({auth}) {
+  return {auth};
+}
+
+export default connect()(Header);
