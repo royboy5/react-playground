@@ -2,15 +2,30 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class Header extends Component {
+  renderContent() {
+    switch (this.props.sample) {
+      case null:
+        return 'I am null'
+      case false:
+        return 'I am false'
+      default:
+        return 'Default'
+    }
+  }
+
   render() {
+    console.log(this.props);
     return (
-      <h1>Haiii</h1>
+      <nav>
+        <h1>Haiii</h1>
+        {this.renderContent()}
+      </nav>
     );
   }
 }
 
-mapStateToProps({auth}) {
-  return {auth};
+function mapStateToProps({sample}) {
+  return {sample};
 }
 
-export default connect()(Header);
+export default connect(mapStateToProps)(Header);

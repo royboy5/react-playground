@@ -12,7 +12,7 @@ class App extends Component {
   componentDidMount() {
     // sample call to action that will 
     // be called everytime the app component is rendered
-    // this.props.sample();
+    this.props.sample();
   }
 
   render() {
