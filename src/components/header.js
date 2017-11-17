@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
+import InfoMessage from './styled-components/InfoMessage'
+import SuccessMessage from './styled-components/SuccessMessage'
+import ErrorMessage from './styled-components/ErrorMessage'
+
 class Header extends Component {
   renderContent () {
     switch (this.props.sample) {
       case null:
-        return 'I am null'
+        return 'I am null state'
       case false:
-        return 'I am false'
+        return 'I am false state'
       default:
-        return 'Default'
+        return 'Default state'
     }
   }
 
@@ -17,8 +21,10 @@ class Header extends Component {
     console.log(this.props)
     return (
       <nav>
-        <h1>Haiii</h1>
-        {this.renderContent()}
+        <InfoMessage>Info Message</InfoMessage>
+        <SuccessMessage>Success Message</SuccessMessage>
+        <ErrorMessage>Error Message</ErrorMessage>
+        <p>{this.renderContent()}</p>
       </nav>
     )
   }

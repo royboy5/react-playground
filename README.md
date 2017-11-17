@@ -2,7 +2,7 @@
 
 Base project for React / Redux application.
 
-This project includes
+This project built on [create-react-app](https://github.com/facebookincubator/create-react-app).  It also uses
 * [axios 0.17.1](https://www.npmjs.com/package/axios)
 * [bootstrap 4.0.0-alpha.6](https://www.npmjs.com/package/bootstrap)
 * [styled-components 2.2.3](https://www.npmjs.com/package/styled-components)
