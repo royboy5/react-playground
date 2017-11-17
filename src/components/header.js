@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
 class Header extends Component {
-  renderContent() {
+  renderContent () {
     switch (this.props.sample) {
       case null:
         return 'I am null'
@@ -13,19 +13,19 @@ class Header extends Component {
     }
   }
 
-  render() {
-    console.log(this.props);
+  render () {
+    console.log(this.props)
     return (
       <nav>
         <h1>Haiii</h1>
         {this.renderContent()}
       </nav>
-    );
+    )
   }
 }
 
-function mapStateToProps({sample}) {
-  return {sample};
+function mapStateToProps ({sample}) {
+  return {sample}
 }
 
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps)(Header)

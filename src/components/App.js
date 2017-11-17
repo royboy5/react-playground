@@ -1,21 +1,21 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import { connect } from 'react-redux';
-import * as actions from '../actions';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import React, { Component } from 'react'
+import { BrowserRouter, Route } from 'react-router-dom'
+import { connect } from 'react-redux'
+import * as actions from '../actions'
 
-import Header from './header';
+import Header from './header'
 
-const body = () => <h2>body</h2>;
+const body = () => <h2>body</h2>
 
 class App extends Component {
-  componentDidMount() {
+  componentDidMount () {
     // sample call to action that will 
     // be called everytime the app component is rendered
-    this.props.sample();
+    this.props.sample()
   }
 
-  render() {
+  render () {
     return (
       <BrowserRouter>
         <div className="App">
@@ -27,4 +27,4 @@ class App extends Component {
   }
 }
 
-export default connect(null, actions)(App);
+export default connect(null, actions)(App)
