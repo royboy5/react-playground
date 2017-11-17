@@ -1,4 +1,4 @@
-// Include this file if you are developing an API as well
+// Include this file if you are developing the API as well
 
 import axios from 'axios'
 
