@@ -21,3 +21,6 @@ $ npm start
 ```
 $ yarn install
 $ yarn start
+
+## Diagrams
+Diagrams are created with draw.io
