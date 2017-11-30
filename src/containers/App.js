@@ -10,7 +10,7 @@ const body = () => <h2>body</h2>
 
 class App extends Component {
   componentDidMount () {
-    // sample call to action that will 
+    // sample call to action that will
     // be called everytime the app component is rendered
     this.props.sample()
   }
@@ -18,12 +18,12 @@ class App extends Component {
   render () {
     return (
       <BrowserRouter>
-        <div className="App">
+        <div className='App'>
           <Header />
-          <Route path="/" component={body} />
+          <Route path='/' component={body} />
         </div>
       </BrowserRouter>
-    );
+    )
   }
 }
 

@@ -21,22 +21,22 @@ class Header extends Component {
   render () {
     console.log(this.props)
 
-    // displaying the use of styled-components with 
+    // displaying the use of styled-components with
     // bootstrap css
     return (
       <div>
-        <Message className="alert">Message</Message>
-        <InfoMessage className="alert">Info Message</InfoMessage>
-        <SuccessMessage className="alert">Success Message</SuccessMessage>
-        <ErrorMessage className="alert">Error Message</ErrorMessage>
-        <p className="alert alert-success">{this.renderContent()}</p>
+        <Message className='alert'>Message</Message>
+        <InfoMessage className='alert'>Info Message</InfoMessage>
+        <SuccessMessage className='alert'>Success Message</SuccessMessage>
+        <ErrorMessage className='alert'>Error Message</ErrorMessage>
+        <p className='alert alert-success'>{this.renderContent()}</p>
       </div>
     )
   }
 }
 
-function mapStateToProps ({sample}) {
-  return {sample}
+function mapStateToProps ({ sample }) {
+  return { sample }
 }
 
 export default connect(mapStateToProps)(Header)
